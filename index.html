@@ -1,0 +1,297 @@
+ <!DOCTYPE html> 
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>João Eduardo Rodrigues Teles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  background: linear-gradient(-45deg, #2e1a47, #341e4f, #2b1c3f, #3a245c);
+  background-size: 400% 400%;
+  animation: backgroundAnimation 5s ease infinite;
+  color: #e0e0ff;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+    main {
+      padding-top: 60px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin: 80px 0;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #d8b4fe;
+      box-shadow: 0 0 20px #9333ea;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #c4b5fd;
+      border-bottom: 2px solid #a78bfa;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #2a2540;
+      font-size: 0.9em;
+      color: #a78bfa;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 5px 0;
+    }
+
+    .nav-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .nav-links a {
+      color: #9333ea;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #facc15;
+    }
+
+    .hover-link {
+      color: #9333ea;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .hover-link:hover {
+      color: #facc15;
+    }
+
+    .sobre-mim-text {
+      font-size: 1.2em;
+      text-align: center;
+      color: #e0e0ff;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .sobre-button {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      background-color: #9333ea;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-size: 1em;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
+      display: none;
+    }
+
+    .sobre-button:hover {
+      background-color: #facc15;
+      transform: scale(1.1);
+    }
+
+    .technologies-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .tech-card {
+      background-color: #2a2540;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 0 20px #9333ea;
+      transition: transform 0.3s;
+    }
+
+    .tech-card:hover {
+      transform: scale(1.05);
+      background-color: #1e1b2f;
+    }
+
+    .tech-card h3 {
+      color: #c4b5fd;
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .tech-card ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .tech-card ul li {
+      color: #e0e0ff;
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
+
+    .tech-card ul li i {
+      margin-right: 10px;
+      color: #9333ea;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section id="sobre" style="text-align: center;">
+      <h1>João Eduardo Rodrigues Teles</h1>
+      <img src="WhatsApp Image 2025-05-02 at 09.29.19.jpeg" alt="Foto de perfil" class="profile-img" />
+      <h2 class="section-title">Sobre mim</h2>
+      <p class="sobre-mim-text">Sou João Eduardo Rodrigues Teles, estudante de Ciência da Computação e apaixonado por tudo que envolve tecnologia. Atualmente, estou no 3º semestre do curso e busco constantemente expandir meus horizontes. Meu objetivo é aplicar meu conhecimento para resolver problemas reais e inovar, seja no desenvolvimento de softwares, no design de soluções ou na exploração de novas ferramentas. Estou sempre pronto para aprender, crescer e contribuir com a evolução da tecnologia!</p>
+
+      <div class="nav-links">
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contatos</a>
+      </div>
+    </section>
+
+    <section id="tecnologias" style="margin-top: 149px;">
+      <h2 class="section-title">Tecnologias</h2>
+      <div class="technologies-container">
+        <div class="tech-card">
+          <h3>Front-End</h3>
+          <ul>
+            <li><i class="fab fa-html5"></i> HTML</li>
+            <li><i class="fab fa-css3-alt"></i> CSS</li>
+            <li><i class="fab fa-js-square"></i> JavaScript</li>
+          </ul>
+          <p style="color:#e0e0ff; font-size: 0.95em; margin-top: 15px;">Minhas tecnologias com as quais tenho experiência para o desenvolvimento de front-end web e design de componentes.</p>
+        </div>
+        <div class="tech-card">
+          <h3>Back-End</h3>
+          <ul>
+            <li><i class="fab fa-php"></i> PHP</li>
+            <li><i class="fab fa-aws"></i> AWS</li>
+          </ul>
+          <p style="color:#e0e0ff; font-size: 0.95em; margin-top: 15px;">Minhas tecnologias com as quais tenho experiência para a programação web back-end e arquitetura de bancos de dados.</p>
+        </div>
+        <div class="tech-card">
+          <h3>Ferramentas</h3>
+          <ul>
+            <li><i class="fab fa-git"></i> Git</li>
+            <li><i class="fab fa-docker"></i> Docker</li>
+            <li><i class="fab fa-ubuntu"></i> Ubuntu</li>
+            <li><i class="fas fa-code"></i> VSCode</li>
+          </ul>
+          <p style="color:#e0e0ff; font-size: 0.95em; margin-top: 15px;">Minhas ferramentas com as quais tenho experiência em controle de versão, edição de código e orquestração de contêineres.</p>
+        </div>
+        <div class="tech-card">
+          <h3>Linguagens</h3>
+          <ul>
+            <li><i class="fab fa-java"></i> Java</li>
+            <li><i class="fab fa-cuttlefish"></i> C++</li>
+            <li><i class="fab fa-python"></i> Python</li>
+          </ul>
+          <p style="color:#e0e0ff; font-size: 0.95em; margin-top: 15px;">Minhas linguagens com as quais tenho experiência para programação de sistemas, engenharia de software e análise de dados.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2 class="section-title">Projetos</h2>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <video id="snakeVideo" muted playsinline autoplay width="400" style="border-radius: 12px; box-shadow: 0 0 15px #9333ea;">
+          <source src="MedalTVScreenRecording20240625161010-tr-edit.mp4" type="video/mp4">
+          Seu navegador não suporta vídeos em HTML5.
+        </video>
+        <p style="margin-top: 15px; color: #e0e0ff; font-size: 1.1em; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Jogo da cobrinha utilizando Pygame que criei como trabalho final no segundo semestre, onde em tempo real a cobrinha come as maçãs e vai crescendo. O objetivo do jogador é comer todas as maçãs.
+        </p>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2 class="section-title">Contatos</h2>
+      <ul>
+        <li>Email: <a href="mailto:jteles0985@gmail.com" class="hover-link">jteles0985@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/jo%C3%A3o-eduardo-rodrigues-teles-b1b9612b0" target="_blank" class="hover-link">João Eduardo Rodrigues Teles</a></li>
+        <li>GitHub: <a href="https://github.com/EduardoTeles12" target="_blank" class="hover-link">EduardoTeles12</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <a href="#" class="sobre-button" id="sobreButton">Sobre mim</a>
+
+  <footer>
+    <p>&copy; 2025 João Eduardo Rodrigues Teles</p>
+  </footer>
+
+  <script>
+    window.onscroll = function () {
+      var sobreButton = document.getElementById('sobreButton');
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        sobreButton.style.display = 'block';
+      } else {
+        sobreButton.style.display = 'none';
+      }
+    };
+
+    document.getElementById('sobreButton').onclick = function (event) {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    const video = document.getElementById("snakeVideo");
+    video.addEventListener("loadedmetadata", () => {
+      const loopDuration = 5;
+      setInterval(() => {
+        video.currentTime = 0;
+        video.play();
+      }, loopDuration * 1000);
+    });
+  </script>
+</body>
+
+</html>
