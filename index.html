@@ -1,4 +1,4 @@
- <!DOCTYPE html> 
+<!DOCTYPE html> 
 <html lang="pt-br">
 
 <head>
@@ -12,25 +12,25 @@
       scroll-behavior: smooth;
     }
     body {
-  margin: 0;
-  font-family: 'Fira Code', monospace;
-  background: linear-gradient(-45deg, #2e1a47, #341e4f, #2b1c3f, #3a245c);
-  background-size: 400% 400%;
-  animation: backgroundAnimation 5s ease infinite;
-  color: #e0e0ff;
-}
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      background: linear-gradient(-45deg, #2e1a47, #341e4f, #2b1c3f, #3a245c);
+      background-size: 400% 400%;
+      animation: backgroundAnimation 5s ease infinite;
+      color: #e0e0ff;
+    }
 
-@keyframes backgroundAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+    @keyframes backgroundAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
 
     main {
       padding-top: 60px;
@@ -240,12 +240,8 @@
 
     <section id="projetos">
       <h2 class="section-title">Projetos</h2>
-
       <div style="text-align: center; margin-top: 40px;">
-        <video id="snakeVideo" muted playsinline autoplay width="400" style="border-radius: 12px; box-shadow: 0 0 15px #9333ea;">
-          <source src="MedalTVScreenRecording20240625161010-tr-edit.mp4" type="video/mp4">
-          Seu navegador não suporta vídeos em HTML5.
-        </video>
+        <img src="Screenshot 2025-05-02 113953.png" alt="Imagem do jogo da cobrinha" width="400" style="border-radius: 12px; box-shadow: 0 0 15px #9333ea;" />
         <p style="margin-top: 15px; color: #e0e0ff; font-size: 1.1em; max-width: 600px; margin-left: auto; margin-right: auto;">
           Jogo da cobrinha utilizando Pygame que criei como trabalho final no segundo semestre, onde em tempo real a cobrinha come as maçãs e vai crescendo. O objetivo do jogador é comer todas as maçãs.
         </p>
@@ -282,15 +278,6 @@
       event.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
-
-    const video = document.getElementById("snakeVideo");
-    video.addEventListener("loadedmetadata", () => {
-      const loopDuration = 5;
-      setInterval(() => {
-        video.currentTime = 0;
-        video.play();
-      }, loopDuration * 1000);
-    });
   </script>
 </body>
 
